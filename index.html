@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sharvest | Coming Soon</title>
+  <meta name="description" content="Sharvest website is under development. Thanks for visiting." />
+  <style>
+    :root {
+      --bg: #f6f1e7;
+      --text: #1f2a1f;
+      --accent: #1f4d3a;
+      --accent-2: #e8a317;
+      --muted: #6b7280;
+      --card: rgba(255,255,255,0.7);
+      --border: rgba(31,77,58,0.12);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(232,163,23,0.18), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(31,77,58,0.12), transparent 28%),
+        var(--bg);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 760px;
+      background: var(--card);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 40px 28px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+    }
+
+    .logo {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 18px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, var(--accent), #2d6a4f);
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.05;
+      color: var(--accent);
+    }
+
+    p.lead {
+      margin: 0 auto 10px;
+      max-width: 560px;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #334155;
+    }
+
+    p.sub {
+      margin: 0 auto 28px;
+      max-width: 520px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: 0.2s ease;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      background: #173b2d;
+    }
+
+    .btn-secondary {
+      border: 1px solid var(--border);
+      color: var(--accent);
+      background: white;
+    }
+
+    .btn-secondary:hover {
+      transform: translateY(-1px);
+      background: #fafafa;
+    }
+
+    .footer {
+      margin-top: 28px;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    .tag {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(232,163,23,0.18);
+      color: #7a5600;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <img src="logo.png" alt="Sharvest logo" style="width:90px; margin:0 auto 18px; display:block;" />
+    <div class="tag">Website under development</div>
+    <h1>Thanks for visiting Sharvest</h1>
+    <p class="lead">
+      We’re preparing something flavorful for you.
+      Our website is currently a work in progress and will be live soon.
+    </p>
+    <p class="sub">
+      Sharvest brings authentic taste, quality ingredients, and thoughtfully crafted products to your table.
+      Please check back shortly.
+    </p>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="mailto:support.sharvest@gmail.com">Contact Us</a>
+      <a class="btn btn-secondary" href="https://amzn.in/d/05WTSSFo" target="_blank" rel="noreferrer">Visit Amazon</a>
+    </div>
+
+    <div class="footer">
+      © <span id="year"></span> Sharvest. All rights reserved.
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
