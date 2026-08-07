@@ -425,6 +425,15 @@
       .logo-wrap img {
         max-width: 140px;
       }
+
+      .social-links {
+        flex-wrap: wrap;
+      }
+
+      .social-btn {
+        flex: 1;
+        min-width: 44px;
+      }
     }
   </style>
 </head>
@@ -507,6 +516,8 @@
               <input type="hidden" name="access_key" value="bf4750ae-926f-42d8-867b-8506296c71c1" />
               <input type="hidden" name="subject" value="New Sharvest website signup" />
               <input type="hidden" name="from_name" value="Sharvest Coming Soon Page" />
+              <input type="hidden" name="redirect" value="https://coming-soon.sharvest.in/thank-you.html" />
+              <input type="checkbox" name="botcheck" class="botcheck" style="display: none;" />
               <input
                 type="text"
                 name="name"
@@ -562,6 +573,9 @@
               <a class="social-btn" href="https://www.instagram.com/sharvest_official?igsh=MWY2ZzhiYTN3NDJueA==" target="_blank" rel="noreferrer" title="Instagram">
                 📷
               </a>
+            </div>
+            <div class="footer-note">
+              © <span id="year"></span> Sharvest. All rights reserved.
             </div>
           </div>
         </aside>
